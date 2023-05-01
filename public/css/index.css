@@ -111,16 +111,14 @@ input:optional
 .lesson-four-task-sixteen
 #quantity:out-of-range
 {
-    background: red;
+    color: red;
 }
-/* не зміг нічим перебити 
-пріорітет .bg-secondary, 
-хіба що видалити його  */
+
 
 .lesson-four-task-seventeen
 input:in-range
 {
-    background: red;
+    color: red;
 }
 
 .lesson-four-task-eighteen
