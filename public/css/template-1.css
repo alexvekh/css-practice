@@ -117,7 +117,6 @@
 .card_price_amount {
     font-size: 40px;
     color: #212529;
-
 }
 
 .card_price_duration {
@@ -138,8 +137,8 @@
     font-size: 16px;
     color: #212529;
     display: block;
-
 }
+
 .card_description_item:not(:last-of-type) {
     margin-bottom: 12px;
 }

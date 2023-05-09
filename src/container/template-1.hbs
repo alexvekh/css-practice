@@ -1,4 +1,4 @@
-<main class='page'>
+<div class='page'>
   <div class='page_content'>
     <div class="page_block">
       <header class='header row'>
@@ -18,44 +18,30 @@
     <div class="page_block">
       <main class="row g-0 plans">
         {{#each plans}}
-        <div class="col plans_card">
-          {{> card data=this}}
-        </div>
-
+          <div class="col plans_card">
+            {{> card data=this}}
+          </div>
        {{/each}}
-
       </main>
     </div>
 
-
-
-
-
-
     <div class="page_block">
       {{> divider}}
+      
       <footer class="row footer">
         <div class="col-3">
           {{> logo}}
           <span class="footer_copyright">Copyright 2023</span>
         </div>
 
-
         {{#each footer}}
-        <div class="col-3">
-          <span class="footer_title"> {{title}} </span>
-          {{>nav list=links isVertical=true}}
-        </div>
+          <div class="col-3">
+            <span class="footer_title"> {{title}} </span>
+            {{>nav list=links isVertical=true}}
+          </div>
         {{/each}}
-        <div class="col-3">
 
-        </div>
-        <div class="col-3">
-          
-        </div>
       </footer>
     </div>
-
-
   </div>
-</main>
+</div>
