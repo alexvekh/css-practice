@@ -298,6 +298,8 @@ flex-direction: column;
 .square {
     width: 32px;
     height: 32px;
+    font-size: 12px;
+    margin: auto;
 
 }
 
@@ -331,7 +333,13 @@ flex-direction: column;
 
 .experience {
     background: var(--color-border);
-    padding: var(--space-l)
+    padding: var(--space-l);
+    position: relative;
+    gap: 24px;
+}
+
+.experience_head {
+    margin-bottom: 24px;
 }
 
 .experience_title {
@@ -339,123 +347,46 @@ flex-direction: column;
     font-weight: 700;
 }
 
-.badge {
+.exp_badge {
     background: #FF7347;
     color: var(--color-white);
     padding: 12px 24px;
     border-radius: 70px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.messages {
-    /* flex-grow: 20; */
-    max-width: 620px;
-    width: 100%;
-    background-color: var(--color-white);
-    border-radius: var(--border-radius);
-    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
-    padding: var(--space-l);
-
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-l);
-}
-
-.messages_title {
-    font-size: var(--size-b);
-    color: var(--color-title);
-    font-weight: var(--weight-text);
-    padding-bottom: var(--space-m);
-    border-bottom: 1px solid var(--color-border);
-}
-
-.messages_link {
-    color: var(--color-primary);
-    font-size: var(--size-s);
-    align-self: flex-end; /*text-align: right;*/
-    text-decoration: none;
-    transition-duration: 0.7s;
-    transition-property: opacity border-color;
-    border-bottom: 1px solid transpared;
-
-
-
-}
-
-.messages_link:hover {
-    opacity: 0.7;
-    border-bottom: 1px solid var(--color-primary);
-}
-
-.msg {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-m);
-    padding-bottom: var(--space-m);
-    border-bottom: 1px solid var(--color-border);
-    position: relative;
-    padding-right: var(--space-b);
-}
-
-.msg_name {
-    font-size: var(--size-d);
-    color: var(--color-title);
-    font-weight: var(--weight-title);
-}
-
-.msg_text {
-    font-size: var(--size-d);
-    color: var(--color-text);
-    font-weight: var(--weight-text);
-}
-
-.msg_day {
+    font-size: 24px;
+    font-weight: 700;
+    
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -22;
+    top: -12;
+    transform: rotate(30deg); 
+}
+
+.experience_body {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 
 }
 
-
-
-.advantages {
-    display: flex;
-    gap: var(--space-l);
-}
-
-.advantages > div {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #e4eaf2;
-    border-radius: var(--border-radius);
-    padding: var(--space-l);
-    gap: var(--space-s);
+.experience_card {
+    padding: 16px;
+    background: var(--color-title);
+    border-radius: 24px;
     width: 100%;
 }
 
-.advantages > div > strong {
-    color: var(--color-title);
-    font-weight: var(--weight-title);
-    font-size: 18px;
+.card_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-top: 8px;
+    margin-bottom: 16px;
+
 }
 
-.advantages > div > p {
-    color: #767676;
-    font-size: var(--size-d);
-    line-height: 150%;
+.card_text {
+    font-family: ;
+    font-size: 16px;
+    line-height: 138%;
+    color: #B1B1B1;
 }
