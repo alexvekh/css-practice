@@ -11,6 +11,7 @@
     --size-b: 24px;
 
     --color-border: #dee2e6;
+    --color-dark-border: #253041;
     --color-primary: rgb(46, 46, 255);
     --color-white: #fff;
     --color-title: #212529;
@@ -62,7 +63,7 @@
     display: flex;
     justify-content: space-between;
     padding: var(--space-m) 0;
-    border-bottom: 1px solid #253041
+    border-bottom: 1px solid var(--color-dark-border)
 }
 
 .underhead {
@@ -176,10 +177,17 @@ text-align: center;
 
 .hero_button {
     background-color: var(--color-text);
+    color: #fff;
     background: #885FFB;
+    font-weight: 700;
+    font-size: 16px;
     border-radius: 10px;
     padding: 12px 32px;
     margin-bottom: 32px;
+}
+
+.hero_button:hover {
+    opacity: 0.7;
 }
 
 .about {
@@ -220,6 +228,15 @@ text-align: center;
 }
 
 .our_articles_button {
+    color: #9CA3AF;
+    padding: 12px 20px;
+    border: 1px solid #9CA3AF;
+    border-radius: 10px;
+}
+
+.our_articles_button:hover {
+    color: #fff;
+    background: #885FFB;
 
 }
 
@@ -227,12 +244,20 @@ text-align: center;
     display: flex;
     flex-direction: row;
     gap: 32px;
+    align-items: flex-start;
+    justify-content: s;
 }
 
 .article {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-width: 300px;
+    width: 100%;
+
+    align-content: flex;
+    flex-basis: 33%;
+    justify-content: space-between;
 
 }
 
@@ -265,25 +290,9 @@ text-align: center;
 
 }
 
-
-.hero_button {
-    background-color: var(--color-text);
-    background: #885FFB;
-    border-radius: 10px;
-    padding: 12px 32px;
-    margin-bottom: 32px;
+.article_button:hover {
+    opacity: 0.7;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .page_block:not(:last-child) {
@@ -292,154 +301,16 @@ text-align: center;
 
 .footer {
     padding: var(--space-l) 0;
-    border-top: 1px solid var(--color-border);
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid var(--color-dark-border);
+    margin: 16px 0 32px 0;
+    
     
 }
 
 .footer_copyright {
     font-size: var(--size-s);
     color: var(--color-text);
-
     display: block;
-    margin-top: var(--space-l);
-}
-
-.footer_title {
-    font-size: var(--size-l);
-    color: var(--color-title);
-    display: block;
-    margin-bottom: var(--space-l);
-
-    font-weight: var(--weight-title);
-}
-
-
-
-/*   -----------  */
-
-
-
-
-
-
-
-.blog {
-    display: flex;
-    gap: var(--space-b);
-
-    padding: var(--space-b); 
-    border-bottom: 1px solid var(--color-border)
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: var(--space-l);
-}
-
-.card_image {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-}
-
-.card_title {
-    font-size: 32px;
-    font-weight: var(--weight-title);
-    color: var(--color-title);
-}
-
-.card_text {
-    font-weight: var(--font-weight);
-    font-size: var(--size-d);
-    color: var(--color-text);
-}
-
-.button {
-    display: inline-block;
-    font-size: var(--size-d);
-    text-decoration: none;
-    padding: var(--space-m) var(--space-xm);
-    /* border-radius: var(--border-radius); */
-}
-
-.featured {
-    display: flex;
-    gap: 0;
- 
-
-}
-
-.featured_post {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-l);
-    margin: 0 26;
-    flex-basis: 33%;
-    justify-content: space-between;
-}
-
-.featured_image {
-    width: 64px;
-    height: 64px;
-    border-radius: var(--border-radius);
-}
-
-.featured_title {
-    font-size: 31px;
-    font-weight: var(--weight-title);
-}
-
-.featured_info {
-    font-size: var(--size-xm);
-    line-height: 170%;
-}
-
-.card_button {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-
-}
-
-.card_button:hover {
-    opacity: 0.7;
-}
-
-.form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--color-primary);
-    padding: var(--space-l);
-    border-radius: var(--border-radius);
-}
-
-.form_item {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-m);
-}
-
-.form_title {
-    font-size: 24px;
-    font-weight: var(--font-weight);
-    color: var(--color-white);
-
-}
-
-.form_button {
-    font-size: 16px;
-    background-color: var(--color-white);
-    width: 100%;
-    max-width: 160px;
-    color: var(--color-text);
-    padding: auto;
-    text-align: center;
-    border-radius: 4px;
-
-
 }
