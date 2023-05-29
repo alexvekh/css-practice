@@ -1,0 +1,26 @@
+    <header class='header'>
+      {{#with header}}
+        <div class="head">
+          <div class='logo'>
+            <span class='badge text-bg-primary'>{{brandName}}</span>
+          </div>
+          <nav>
+            {{>nav list=links}}
+            {{!-- <div class='nav {{#if isVertical}} nav_vertical {{else}} nav_inline {{/if}}'>
+              {{#each links}}
+                <a class='nav_link' href='{{url}}'>{{text}}</a>
+              {{/each}}
+            </div> --}}
+          </nav>
+        </div>
+        <div class="underhead">
+          <div> 
+            <span class="ad">Ad</span> 
+            {{#with ad}}
+              <a class="link" href="{{url}}">{{text}} {{url}}</a>
+            {{/with}} 
+          </div>
+          <div class="users_online">Users online: {{userOnline}}</div>
+        </div>
+      {{/with}}
+    </header>
