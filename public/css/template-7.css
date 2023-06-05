@@ -258,6 +258,7 @@ text-align: center;
     align-content: flex;
     flex-basis: 33%;
     justify-content: space-between;
+    
 
 }
 
@@ -265,7 +266,22 @@ text-align: center;
     width: 100%;
     border-radius: 24px;
     align-self: stretch;
+}
+ 
+.relative {
+    position: relative;
+}
 
+.new {
+    background: rgba(251, 95, 95, 0.5);
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    right: 16px;
+    bottom: 16px;
+    border-radius: 4px;
+    padding: 2px 6px;
+    text-transform: uppercase;
 }
 
 .article_title {
@@ -278,7 +294,6 @@ text-align: center;
     font-weight: 400;
     line-height: 150%;
     color: #9CA3AF;
-
 }
 
 .article_button {
@@ -305,8 +320,6 @@ text-align: center;
     justify-content: space-between;
     border-top: 1px solid var(--color-dark-border);
     margin: 16px 0 32px 0;
-    
-    
 }
 
 .footer_copyright {

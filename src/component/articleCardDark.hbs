@@ -1,9 +1,12 @@
 <div class='article'>
-  <img
-    class='article_img'
-    src='{{photo}}'
-    alt='article photo'
-  />
+  <div class='relative'>
+    <img
+      class='article_img'
+      src='{{photo}}'
+      alt='article photo'
+    />
+    {{#if isNew}} <span class='new'> New </span> {{/if}}
+  </div>
   <h3 class='article_title'>{{name}}</h3>
   <p class='article_text'>{{description}}</p>
   <button class='article_button' id='{{id}}'>
