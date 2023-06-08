@@ -70,7 +70,9 @@
 
   <body>
     <div class='page page--dashboard'>
-      <aside class='page__aside aside vertical'>
+      <aside
+        class='page__aside aside vertical vertical--big'
+      >
         <div class='text aside__logo'>Sidebar</div>
         <nav class='vertical vertical--small'>
           <a
@@ -83,7 +85,6 @@
             ></span>
             <span class='text text--light'>Home</span>
           </a>
-
           <a href='#' class='nav-button click'>
             <span
               class='icon nav-button__icon'
@@ -99,18 +100,22 @@
             ></span>
             <span class='text text--light'>Products</span>
           </a>
-          <div class='field field--select'>
-            <span class='text text--light'>Choose...</span>
-            <select class='field__select' name='' id=''>
-              <option value=''></option>
-            </select>
+          <div class='relative click'>
+            <div class='field field--select'>
+              <span
+                class='text text--light'
+              >Choose...</span>
+              <select class='field__select' name='' id=''>
+                <option value=''></option>
+              </select>
+            </div>
           </div>
         </nav>
-
       </aside>
+
       <header class='header'>
         <div class='layout header__content text--small'>
-          <div class='header__search'>
+          <div class='header__search relative'>
             <input
               type='text'
               placeholder='Search'
@@ -148,7 +153,96 @@
         </div>
 
       </header>
+
       <main class='main'>
+        <div class='layout'>
+          <section class='box analytic__block'>
+            <div
+              class='analytic analytic--double analytic--purple'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-purple'
+                style="background-image: url('/svg/analytic/erning.svg')"
+              ></span>
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic__title text text--light'
+                >$500.00 </div>
+                <div class='text text--lighter'>Total erning
+                </div>
+                <span
+                  class='icon analytic__arrow'
+                  style="background-image: url('/svg/analytic/blue-arrow.svg')"
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class='analytic analytic--double analytic--blue'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-blue'
+                style="background-image: url('/svg/analytic/order.svg')"
+              ></span>
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic__title text text--light'
+                >$961 </div>
+                <div class='text text--lighter'>Total order
+                </div>
+                <span
+                  class='icon analytic__arrow'
+                  style="background-image: url('/svg/analytic/blue-arrow.svg')"
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class='analytic analytic--horizontal analytic--blue'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-blue'
+                style="background-image: url('/svg/analytic/erning.svg')"
+              ></span>
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic__small-title text text--light'
+                >$203k </div>
+                <div class='text text--lighter'>Total income
+                </div>
+              </div>
+            </div>
+
+            <div
+              class='analytic analytic--horizontal border'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-yellow'
+                style="background-image: url('/svg/analytic/store.svg')"
+              ></span>
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic__small-title text text--bold'
+                >$203k
+                </div>
+                <div class='text text-grey'>Total income
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <section class='box analytic__block'></section>
+
+        </div>
 
       </main>
 
