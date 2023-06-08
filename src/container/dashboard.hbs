@@ -71,7 +71,7 @@
   <body>
     <div class='page page--dashboard'>
       <aside class='page__aside aside vertical'>
-        <div class='aside__logo'>Sidebar</div>
+        <div class='text aside__logo'>Sidebar</div>
         <nav class='vertical vertical--small'>
           <a
             href='#'
@@ -99,11 +99,58 @@
             ></span>
             <span class='text text--light'>Products</span>
           </a>
+          <div class='field field--select'>
+            <span class='text text--light'>Choose...</span>
+            <select class='field__select' name='' id=''>
+              <option value=''></option>
+            </select>
+          </div>
         </nav>
 
       </aside>
-      <header class='header'>header</header>
-      <main class='main'>Main</main>
+      <header class='header'>
+        <div class='layout header__content text--small'>
+          <div class='header__search'>
+            <input
+              type='text'
+              placeholder='Search'
+              class='text field field--header'
+            />
+            <span
+              class='icon header__icon-search'
+              style="background-image: url('/svg/header/search.svg')"
+            ></span>
+            <a
+              href='#'
+              class='icon icon--header-settings icon--button icon--color-blue click'
+              style="background-image: url('/svg/header/settings.svg')"
+            ></a>
+          </div>
+          {{! <label for='' class='text'></label> }}
+          <div class='header__icons'>
+            <a
+              href='#'
+              class='icon header__icon icon--button icon--color-yellow click'
+              style="background-image: url('/svg/header/anten.svg')"
+            ></a>
+
+            <a
+              href='#'
+              class='icon header__icon icon--button icon--color-translate click'
+              style="background-image: url('/svg/header/translate.svg')"
+            ></a>
+            <a
+              href='#'
+              class='icon header__icon icon--button icon--color-yellow click'
+              style="background-image: url('/svg/header/ring.svg')"
+            ></a>
+          </div>
+        </div>
+
+      </header>
+      <main class='main'>
+
+      </main>
 
     </div>
 
